@@ -1,0 +1,265 @@
+@import "../settings/settings";
+
+
+/*** SUPERFISH ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.sf-menu li {
+   position: relative;
+}
+.sf-menu ul {
+   position: absolute;
+   display: none;
+   top: 100%;
+   left: 0;
+   z-index: 99;
+}
+.sf-menu > li {
+   float: left;
+   &:last-child {
+    margin-right: $topnav-min-width/2;
+   }
+}
+.sf-menu li:hover > ul,
+.sf-menu li.sfHover > ul {
+   display: block;
+}
+
+.sf-menu a {
+   display: block;
+   position: relative;
+}
+.sf-menu ul ul {
+   top: 0;
+   left: 100%;
+}
+
+
+/*** alter arrow directions ***/
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+  margin-top: -5px;
+  margin-right: -3px;
+  border-color: transparent;
+  border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+  border-left-color: rgba(255,255,255,.5);
+}
+.sf-vertical.sf-arrows li > .sf-with-ul:focus:after,
+.sf-vertical.sf-arrows li:hover > .sf-with-ul:after,
+.sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
+  border-left-color: white;
+}
+
+/* SUPERFISH VERTICAL  */
+
+/* adding sf-vertical class in addition to sf-menu creates a vertical menu */
+/* eg. <ul class="sf-menu sf-vertical"> ... */
+.sf-vertical {
+  width: $topnav-min-width;
+  /* If you want the width of the closed menu to expand to its
+  widest top-level menu item (like its "Supersubs" submenus do),
+  replace the width rule above with the following two rules. */
+
+  /*
+  min-width: $topnav-min-width;
+  *width: $topnav-min-width;
+  */
+}
+.sf-vertical ul {
+   left: 100%;
+   top: 0;
+}
+.sf-vertical > li {
+  float: none;
+}
+.sf-vertical li {
+  width: 100%;
+}
+
+/*** alter arrow directions ***/
+.sf-vertical.sf-arrows > li > .sf-with-ul:after {
+  margin-top: -5px;
+  margin-right: -3px;
+  border-color: transparent;
+  border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+  border-left-color: rgba(255,255,255,.5);
+}
+.sf-vertical.sf-arrows li > .sf-with-ul:focus:after,
+.sf-vertical.sf-arrows li:hover > .sf-with-ul:after,
+.sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
+  border-left-color: white;
+}
+
+
+/* SUPERFSIH CUSTOM */
+
+.sf-menu {
+   ul {
+   min-width: $topnav-min-width; /* allow long menu items to determine submenu width */
+   *width: $topnav-min-width; /* no auto sub width for IE7, see white-space comment below */
+   }
+
+   li {
+   background: lighten($topnav-bg, 1%);
+   white-space: nowrap; /* no need for Supersubs plugin */
+   *white-space: normal; /* ...unless you support IE7 (let it wrap) */
+   -webkit-transition: background .2s;
+   transition: background .2s;
+   }
+
+   a {
+   padding: $baseline/3 $baseline/1.5;
+   text-decoration: none;
+   zoom: 1; /* IE7 */
+   color: $topnav-link-color;
+   }
+
+   .sf-menu ul li {
+      background: lighten($topnav-bg, 10%);
+   }
+
+   ul ul li {
+      background: lighten($topnav-bg, 15%);
+   }
+
+   li:hover,
+   li.sfHover {
+      background: lighten($topnav-bg, 5%);
+      /* only transition out, not in */
+      -webkit-transition: none;
+      transition: none;
+
+      a {
+         color: darken($topnav-link-color,20%);
+      }
+   }
+
+
+}
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+   padding-right: 2.5em;
+   *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+
+
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   right: $baseline/1.5;
+   margin-top: -0.1875rem;
+   height: 0;
+   width: 0;
+   /* order of following 3 rules important for fallbacks to work */
+  
+}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+   border-top-color: white; /* IE8 fallback colour */
+}
+/* styling for right-facing arrows */
+.sf-arrows ul .sf-with-ul:after {
+   margin-top: -5px;
+   margin-right: -3px;
+   border-color: transparent;
+   border-left-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+   border-left-color: rgba(255,255,255,.5);
+}
+.sf-arrows ul li > .sf-with-ul:focus:after,
+.sf-arrows ul li:hover > .sf-with-ul:after,
+.sf-arrows ul .sfHover > .sf-with-ul:after {
+   border-left-color: white;
+}
+ @media screen and (max-width: $topnav-bp) {
+  .rwd-menu {
+           border-top: 0.0625rem solid $topnav-link-color;
+           margin-left: -$gutter;
+           margin-right: -$gutter;
+           padding-top: $baseline;
+
+           li {
+              display: block;
+                width: 44%;
+
+                @media screen and (max-width: $xs-bp) {
+                 width: 94%;
+                }
+                margin: 3%;
+                float: left;
+                font-size: $h3-size;
+                margin-bottom: 1em;
+              ul {
+                 margin-left: 0;
+                 margin-top: 1em;
+              }
+
+              ul li {
+                 width:100%;
+                 border-bottom: 1px dotted $topnav-link-color;
+                 font-size: .5em;
+                 margin-bottom: .5em;
+
+              }
+           }
+        }
+}
+
+// horizontal
+
+ul.horizontal, ul.pagination {
+  @extend .sf-menu;
+
+  li {
+
+    a {
+      font-weight: $font-weight-thin;
+
+
+    }
+  }
+}
+
+ul.horizontal {
+  li {
+    background-color: $horizontal-bg;
+
+    &:hover {
+      background-color: lighten($horizontal-link-color, 50%);
+    }
+
+    a {
+      color: $horizontal-link-color;
+      font-weight: $body-font-weight;
+      &:hover {
+        color: darken($horizontal-bg, 60%);
+      }
+    }
+
+  }
+}
+
+ul.pagination {
+  li {
+    background-color: $pagination-bg;
+
+    &:hover {
+      background-color: lighten($pagination-link-color, 70%);
+    }
+
+    a {
+      color: $pagination-link-color;
+      &:hover {
+        color: darken($pagination-bg, 60%);
+
+      }
+    }
+
+  }
+}
+

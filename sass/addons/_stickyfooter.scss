@@ -1,0 +1,26 @@
+@import "../settings/settings";
+
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 $sticky-footer-height; /* bottom = footer height */
+}
+footer.sticky {
+    background-color: $sticky-footer-bg;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: $sticky-footer-height;
+    width: 100%;
+    text-align: center;
+
+    .container {
+      padding: 0 $baseline;
+    }
+
+}
+
+

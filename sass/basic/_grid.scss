@@ -1,0 +1,154 @@
+@import "../settings/settings";
+
+
+
+// container 
+
+.container {
+   &, div, ul, li {
+   box-sizing: border-box;
+   }
+   padding: $gutter;
+   margin:0 auto;
+   max-width: $max-width;
+
+   img {
+      width:100%;
+      max-width: 100%;
+      height:auto;
+   }
+}
+
+// Rows
+
+.row {
+   margin-left: -$gutter;
+   margin-right: -$gutter;
+   
+   &:after {
+      content: "";
+      display: table;
+      clear:both;
+   }
+}
+
+// cols 
+
+.columns {
+   position:relative;
+   float: left;
+   padding: $vertical-marg $gutter;
+   width:100%;
+
+}
+
+// cols width  - starting from mobile
+
+
+   @for $i from 1 through $column-count {
+      .x-small-#{$i} {
+         width: (100 / $column-count) * $i *1%;
+      }
+   }
+
+   .x-small-third {
+      width: (100/3)*1%;
+   }
+
+   .x-small-two-thirds {
+      width: (100/3)*2%;
+   }
+
+   .x-small-half {
+      width: (100/2)*1%;
+   }
+
+   .x-small-quarter {
+      width: (100/4)*1%;
+   }
+
+
+// cols width  - from tablet
+
+@media screen and (min-width: $xs-bp){
+
+   @for $i from 1 through $column-count {
+      .small-#{$i} {
+         width: (100 / $column-count) * $i *1%;
+      }
+   }
+
+   .small-third {
+      width: (100/3)*1%;
+   }
+
+   .small-two-thirds {
+      width: (100/3)*2%;
+   }
+
+   .small-half {
+      width: (100/2)*1%;
+   }
+
+   .small-quarter {
+      width: (100/4)*1%;
+   }
+}
+
+
+// cols width  - from medium
+
+@media screen and (min-width: $small-bp){
+
+   @for $i from 1 through $column-count {
+      .medium-#{$i} {
+         width: (100 / $column-count) * $i *1%;
+      }
+   }
+
+   .medium-third {
+      width: (100/3)*1%;
+   }
+
+   .medium-two-thirds {
+      width: (100/3)*2%;
+   }
+
+   .medium-half {
+      width: (100/2)*1%;
+   }
+
+   .medium-quarter {
+      width: (100/4)*1%;
+   }
+}
+
+// cols width  - from desktop large
+
+@media screen and (min-width: $medium-bp){
+
+   @for $i from 1 through $column-count {
+      .large-#{$i} {
+         width: (100 / $column-count) * $i *1%;
+      }
+   }
+
+   .large-third {
+      width: (100/3)*1%;
+   }
+
+   .large-two-thirds {
+      width: (100/3)*2%;
+   }
+
+   .large-half {
+      width: (100/2)*1%;
+   }
+
+   .large-quarter {
+      width: (100/4)*1%;
+   }
+}
+   
+
+

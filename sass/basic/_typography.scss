@@ -1,0 +1,122 @@
+@import "../settings/settings";
+
+html,input,button, textarea {
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+}
+
+body {
+   color: $text-color;
+   font-family: $body-font-family;
+   line-height: $baseline;
+   font-weight: $body-font-weight;
+}
+
+p {
+   margin-bottom: $baseline;
+}
+
+a, a:visited {
+   color: $link-color;
+   font-weight: $font-weight-bolder;
+   transition: color .2s;
+   text-decoration: none;
+
+
+   &:hover {
+      color: darken($link-color, 10%);
+
+   }
+}
+
+hr {
+   border:0;
+   background-color: $hr-color;
+   height: 0.0625rem;
+   margin: $baseline 0;
+}
+
+// Headings
+
+h1,h2,h3,h4,h5,h6 {
+   margin: $baseline 0 $baseline/4;
+   line-height: $baseline/1.5;
+   font-weight: $heading-font-weight;
+   a {
+      font-weight: $font-weight-thin;
+   }
+}
+
+h2,h3 {
+   margin: $baseline/2 0
+}
+
+h4, h5,h6 {
+   line-height: $baseline;
+   margin: $baseline/2 0
+}
+
+h4,h5 {
+   font-weight: $font-weight-bold;
+   text-transform: uppercase;
+}
+
+h1 {
+   font-size: $h1-min-size;
+}
+h2 {
+   font-size: $h2-min-size;
+}
+h3 {
+   font-size: $h3-min-size;
+}
+h4 {
+   font-size: $h4-min-size;
+}
+h5 {
+   font-size: $h5-size;
+}
+h6 {
+   font-size: $h6-size;
+}
+
+@media screen and (min-width:$xs-bp) {
+   h1 {
+      font-size: $h1-size;
+   }
+   h2 {
+      font-size: $h2-size;
+   }
+   h3 {
+      font-size: $h3-size;
+   }
+   h4 {
+      font-size: $h4-size;
+   }
+   
+}
+
+
+ul,ol {
+   list-style-type: $list-style-default;
+   margin: 0 0 $baseline $baseline;   
+}
+
+small {
+   font-size: $text-small-size;
+}
+
+blockquote {
+   color: $muted-text-color;
+   font-style: italic;
+   margin-left: $baseline;
+
+   footer {
+      @extend small;
+      font-style: normal;
+   }
+}
+
+pre,code {
+   font-family: monospace;
+}

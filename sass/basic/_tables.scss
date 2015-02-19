@@ -1,0 +1,44 @@
+@import "../settings/settings";
+@import "../settings/settings";
+
+
+.table {
+	width: 100%;
+	
+	&.bordered {
+		border: 1px solid lighten($table-border, 20%);
+
+		thead {
+			background-color: darken($table-border, 30%);
+			border-bottom: 1px solid darken($table-border, 60%);
+			color:#fcfcfc;
+		}
+
+		td {
+			border: 1px solid lighten($table-border, 30%); 
+		}
+	}
+
+	tr {
+		border-bottom: 1px solid lighten($table-border, 30%);
+	}
+	
+	thead {
+		
+		color: $table-heading-color;
+		border-bottom: 3px solid $table-border;
+
+		tr {
+			border-bottom: none;
+		}
+	}
+
+	td,
+	th {
+		text-align: left;
+		padding:$baseline/2;
+	}
+
+
+}
+

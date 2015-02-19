@@ -1,0 +1,112 @@
+@import "../settings/settings";
+
+.tabs-links {
+	margin:0;
+
+	&:after {
+		content:"";
+		display: table;
+		clear:both;
+	}
+
+	li {
+		float: left;
+		list-style-type: none;
+		margin-right: 1px;
+
+		.vertical & {
+		display: block;
+		float:none;
+		}
+
+		&:first-child {
+			margin-left: $baseline/3;
+
+			.vertical & {
+			margin-left: 0;
+			
+			}
+		}
+
+		
+	
+
+		a {
+		background-color: $tabs-inactive-bg-color;
+		display: inline-block;
+		padding: $baseline/1.5 $baseline;
+		color: lighten( $tabs-active-text-color, 30%);
+			
+			.vertical & {
+			display: block;
+			
+			}
+
+
+		&:hover {
+			background-color: $tabs-active-bg-color;
+			color: $tabs-active-text-color;
+			}
+		}
+
+		&.active a,
+		&.active a:hover {
+			border: 1px solid $tabs-border-color;
+			border-bottom: 0;
+			background-color: $tabs-active-bg-color;
+			color: $tabs-active-text-color;
+			font-weight: bold;
+			margin-bottom: -1px;
+			
+			.vertical & {
+			border-bottom: 1px solid $tabs-border-color;
+			border-right: 0;
+			border-left: 0;
+			border-top: 0;
+			}
+
+		}
+	}
+
+	.vertical & {
+		float:left;
+		width: 20%;
+	}
+
+
+}
+
+.tabs-content {
+	border: 1px solid $tabs-border-color;
+	padding: $baseline;
+
+	.vertical & {
+		border:0;
+		float:right;
+		width:80%;
+		background-color: $tabs-active-bg-color;
+	}
+	
+	p:last-child {
+
+	}
+}
+
+.tab {
+	display:none;
+	&.active {
+		display: block;
+	}
+}
+
+.map {
+	.tab {
+	opacity:0;
+	width:100%;
+	&.active {
+		opacity:1;
+
+	}
+
+}
+}

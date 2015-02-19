@@ -1,0 +1,62 @@
+@import "../settings/settings";
+
+@for $i from 2 through $column-count {
+   .grid-block-#{$i} {
+      list-style-type: none;
+      margin: $gutter -1%;
+      &:after {
+         content:"";
+         display: table;
+         clear:both;
+      }
+   }
+}
+
+@media screen and (max-width: $grid-block-bp) {
+
+   @for $i from 2 through $column-count {
+      .grid-block-#{$i} li {
+         width: 48%;
+         float:left;
+         list-style: none;
+         position: relative;
+         margin: $baseline 1% 0;
+
+         &:nth-child(2n+0) {
+         clear:right;   
+            }
+         &:nth-child(2n+0) + li {
+         clear:left;
+            }
+      }
+   }
+}
+
+@media screen and (min-width: $grid-block-bp) {
+   // li width
+
+   @for $i from 2 through $column-count {
+      .grid-block-#{$i} li {
+         width: ( (100-$i*2) / $i ) * 1%;
+         float:left;
+         list-style: none;
+         position: relative;
+         margin: $baseline 1% 0;
+
+         &:nth-child(#{$i}n+0) {
+         clear:right;   
+            }
+         &:nth-child(#{$i}n+0) + li {
+         clear:left;
+            }
+      }
+   }
+}
+
+[class^=".grid-block-"] {
+   &.cards {
+      box-shadow: 0 0.0625rem 0.125rem rgba(0,0,0,.1);
+   }
+}
+
+

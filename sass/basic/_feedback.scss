@@ -1,0 +1,49 @@
+@import "../settings/settings";
+
+[class^="alert-"] {
+   border: 0.0625rem solid;
+   border-bottom-width: 0.1875rem;
+
+   margin: $baseline 0;
+   padding: $baseline;
+
+   p {
+      margin-bottom:0;
+   }
+}
+
+.alert-information {
+   border-color: lighten($information-color, 50%);
+   background-color: lighten($information-color, 70%);
+
+   & :first-child {
+      color: $information-color;
+   }
+}
+
+.alert-error {
+   border-color: lighten($error-color, 30%);
+   background-color: lighten($error-color, 40%);
+
+   & :first-child {
+      color: $error-color;
+   }
+}
+
+.alert-warning {
+   border-color: lighten($warning-color, 40%);
+   background-color: lighten($warning-color, 50%);
+
+   & :first-child {
+      color: $warning-color;
+   }
+}
+
+.alert-success {
+   border-color: lighten($success-color, 50%);
+   background-color: lighten($success-color, 70%);
+
+   & :first-child {
+      color: $success-color;
+   }
+}

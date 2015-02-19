@@ -1,0 +1,1194 @@
+<!doctype html>
+
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+
+  <title>Kairo framework 101</title>
+  <meta name="description" content="Kairo framework 101">
+  <meta name="author" content="cgv">
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+   <link href='bower_components/fontawesome/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <style>
+      .demo {
+         background-color: #ccc;
+         text-align: center;
+         display: block;
+         border-radius: 4px;
+         padding:.5em;
+      }
+  </style>
+</head>
+
+<body>
+<div class="ribbon-wrapper">
+         <div class="ribbon"><a href="#">Ribbon</a> </div>
+      </div>
+<header id="top" role="banner">
+   
+   <div class="topnav">
+      <div class="container">
+         <div class="row navbar-container">
+            <div class="medium-4 columns head">
+               <button class="btn-large" id="rwd-trigger-top">
+                  <i class="fa fa-bars"></i>
+               </button>
+               <h1><a href="#" class="logo">Kairo</a></h1>
+            </div>
+            <div class="medium-8 columns">
+                  <nav role="navigation">
+                     <ul class="sf-menu">
+                     <li><a href="#">Basic</a>
+                           <ul>
+                              <li><a href="#grid">The Grid System</a></li>
+                              <li><a href="#gblock">Grid Blocks</a></li>
+                              <li><a href="#icons">Icons</a></li>
+                              <li><a href="#feed">Feedback</a></li>       
+                              <li><a href="#tables">Tables</a></li>       
+                           </ul>
+                         </li> 
+                        <li><a href="#">Typography</a>
+                           <ul>
+                             
+                              <li><a href="#typo">Typography</a></li> 
+                              <li><a href="#btns">Buttons</a></li>
+                              <li><a href="#forms">Forms</a></li>   
+                              <li><a href="#tables">Tables</a></li>       
+                           </ul>
+                         </li>          
+                        <li><a href="#">Navigation</a>
+                              <ul>
+                              <li><a href="#navigation">Navigation</a></li>
+                              <li><a href="#vertical">Other menus</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Showcase</a>
+                              <ul>
+                              <li><a href="#tabs">Tabs</a></li>
+                              <li><a href="#acc">Accordions</a></li>
+                              <li><a href="#carousel">Carousels</a></li>
+                              <li><a href="#mason">Masonry</a></li>
+                              
+                              </ul>
+                        </li>
+                     </ul>
+                  </nav>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+  
+
+   <section id="grid" class="container">
+      <div class="row">
+         <div class="small-12 columns">
+            <div class="demo">.small-1 columns</div>
+         </div>  <!-- end small-1 columns2 -->
+      </div>   <!-- end row -->
+      <div class="row">
+         <div class="small-6 columns">
+            <div class="demo">.small-6 columns</div>
+         </div>  <!-- end small-6 columns -->
+         <div class="small-6 columns">
+            <div class="demo">.small-6 columns</div>
+         </div>  <!-- end small-6 columns -->
+      </div>   <!-- end row -->
+      <div class="row">
+         <div class="small-4 columns">
+            <div class="demo">.small-4 columns</div>
+         </div>  <!-- end small-4 columns -->
+         <div class="small-4 columns">
+            <div class="demo">.small-4 columns</div>
+         </div>  <!-- end small-4 columns -->
+         <div class="small-4 columns">
+            <div class="demo">.small-4 columns</div>
+         </div>  <!-- end small-4 columns -->
+      </div>   <!-- end row -->
+      <div class="row">
+         <div class="small-3 columns">
+            <div class="demo">.small-3 columns</div>
+         </div>  <!-- end small-3 columns -->
+         <div class="small-3 columns">
+            <div class="demo">.small-3 columns</div>
+         </div>  <!-- end small-3 columns -->
+         <div class="small-3 columns">
+            <div class="demo">.small-3 columns</div>
+         </div>  <!-- end small-3 columns -->
+         <div class="small-3 columns">
+            <div class="demo">.small-3 columns</div>
+         </div>  <!-- end small-3 columns -->
+      </div>   <!-- end row -->
+      <div class="row">
+         <div class="small-2 columns">
+            <div class="demo">.small-2 columns</div>
+         </div>  <!-- end small-2 columns -->
+         <div class="small-2 columns">
+            <div class="demo">.small-2 columns</div>
+         </div>  <!-- end small-2 columns -->
+         <div class="small-2 columns">
+            <div class="demo">.small-2 columns</div>
+         </div>  <!-- end small-2 columns -->
+         <div class="small-2 columns">
+            <div class="demo">.small-2 columns</div>
+         </div>  <!-- end small-2 columns -->
+         <div class="small-2 columns">
+            <div class="demo">.small-2 columns</div>
+         </div>  <!-- end small-2 columns -->
+         <div class="small-2 columns">
+            <div class="demo">.small-2 columns</div>
+         </div>  <!-- end small-2 columns -->
+      </div>   <!-- end row -->
+      <div class="row">
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+         <div class="large-1 medium-4 columns">
+            <div class="demo">.large-1 medium-4 columns</div>
+         </div>  <!-- end large-1 medium-4 columns -->
+      </div>   <!-- end row -->
+      <div class="row">
+         <div class="small-5 columns">
+            <div class="demo">.small-5 columns</div>
+         </div> <!-- end small-5 columns -->
+         <div class="small-7 columns">
+            <div class="demo">.small-7 columns</div>
+         </div> <!-- end small-7 columns -->
+      </div> <!-- end row -->
+   </section>  <!-- end grid -->
+   
+   <section id="gblock" class="container">
+      <h1>Grid Block</h1>
+      <hr>
+      <div class="row">
+         
+      <div class="small-6 columns">
+         
+ 
+            <ul class="grid-block-3">
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+               <li>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+               </li>
+            </ul>
+         </div>
+      
+         <div class="small-6 columns">
+            <ul class="grid-block-2 cards">
+         <li>
+            <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+            </div>
+         </li>
+         <li>
+            <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+            </div>
+         </li>
+         <li>
+            <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+            </div>
+         </li>
+         <li>
+            <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+            </div>
+         </li>
+         <li>
+            <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+            </div>
+         </li>
+         <li>
+            <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore laborum alias officia!</p>
+            </div>
+         </li>
+        
+      </ul>
+         </div>
+         <div class="small-6 columns"></div>
+      </div>
+   </section>
+
+   <section id="typo" class="container">
+      <h1>Typography</h1>
+      <hr>
+      <div class="row">
+         <div class="small-half medium-third columns">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+         </div>
+         <div class="small-half medium-two-thirds columns">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae illum libero officiis, ratione culpa, <a href="">doloribus in omnis perspiciatis</a>. Perspiciatis aliquam et ea deleniti, accusamus quas esse alias nemo ad. Adipisci accusantium fugiat velit beatae quis placeat est, nisi. Quae dolorum reiciendis facilis porro id illum hic eum libero vitae ut.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi consequatur veritatis odit deserunt reiciendis <strong>tempore</strong> nesciunt illo officia iusto molestias libero facere perferendis repellendus, fugit exercitationem optio dicta iure incidunt ipsa aut ex quis quod! Esse optio, dolore commodi culpa quaerat quasi aliquam expedita magnam consequatur in dolorum asperiores ratione aliquid eos sit maiores officia nam nisi atque dolorem vero iste obcaecati alias id. Ea eveniet,<em>possimus</em>  ullam optio alias quam repellat provident quia pariatur amet molestias distinctio quas sequi dolorum quisquam deleniti cum quis laboriosam aliquid voluptate non nam beatae ipsum consequuntur. Eum omnis, vitae amet deleniti, atque velit iusto iste obcaecati voluptatum id inventore culpa perferendis cupiditate, blanditiis tenetur minima explicabo at perspiciatis architecto. Molestias ratione numquam, illo?</p>
+            <pre><code>
+            .row {
+                     margin-left: -$gutter;
+                     margin-right: -$gutter;
+                     
+                     &:after {
+                        content: "";
+                        display: table;
+                        clear:both;
+                     }
+                  }
+            </code></pre>
+         </div>
+         <div class="small-half columns">
+            <h4>Unordered list</h4>
+            <ul>
+               <li>item 1</li>
+               <li>item 2</li>
+               <li>item 3</li>
+               <li>item 4</li>
+               <li>item 5</li>
+               <li>item 6</li>
+            </ul>
+         </div>
+         <div class="small-half columns">
+            <h4>Ordered list</h4>
+            <ol>
+               <li>item 1</li>
+               <li>item 2</li>
+               <li>item 3</li>
+               <li>item 4</li>
+               <li>item 5</li>
+               <li>item 6</li>
+            </ol>
+         </div>
+      </div> <!-- end row -->
+
+      <hr>
+      <blockquote>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam tenetur beatae, facere. Quos assumenda aut cumque adipisci similique, ipsum autem temporibus saepe amet, optio, possimus voluptatibus unde itaque ab tenetur! Repudiandae, aperiam.
+         <footer><a href="">This is the author</a></footer>
+      </blockquote>
+   </section><!-- end typography -->
+
+   <section id="btns" class="container">
+      
+         <h1>Buttons</h1>
+         <hr>
+      <div class="row">
+         <div class="small-4 columns">
+            <h4>Buttons Styles</h4>
+            <button class="btn">Default Style</button>
+            <button class="btn-primary">Primary Style</button>
+            <button class="btn-secondary">Secondary Style</button>
+         </div>
+         <div class="small-4 columns">
+            <h4>Buttons Sizes</h4>
+            <p><button class="btn-small">Small size</button></p>
+            <p><button class="btn">Default size</button></p>
+            <p><button class="btn-large">Large size</button></p>
+         </div>
+         <div class="small-4 columns">
+            <h4>HTML elements</h4>
+            <p><button class="btn">Button</button></p>
+            <p><a href="#" class="btn">Anchor tag</a></p>
+            <p><input type="submit" class="btn" value="Submit input"></p>
+            <p><input type="button" class="btn" value="Button input"></p>
+         </div>
+      </div>  <!-- end row -->
+   </section>  <!-- end buttons -->
+   <section id="forms" class="container">
+      <h1>Form elements</h1>
+      <hr>
+      <div class="row">
+         <div class="medium-half columns">
+            <form action="#">
+               <fieldset>
+                  <legend>Inputs</legend>
+                  <div class="field-group">
+                     <label for="demo-input-1">This is a label</label>
+                     <input type="text" id="demo-input-1" placeholder="This is a text input">
+                     <p class="help">This is a contextual help</p>
+                  </div>
+                  <div class="field-group field-error">
+                     <label for="demo-input-2">Error Field</label>
+                     <input type="text" id="demo-input-2" placeholder="This is a text input">
+                     <p class="help">This is a error message</p>
+                  </div>
+
+                  <div class="field-group">
+                     <label for="demo-text-area">This is a label</label>
+                     <textarea name="demo-text-area" id="demo-text-area" cols="30" rows="10" placeholder="this is a text area"></textarea>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+         <div class="medium-half columns">
+            <form action="#">
+               <fieldset>
+                  <legend>Radio buttons and checkboxes</legend>
+                  <div class="field-group">
+                     <input type="radio" name="demo-radio" id="demo-radio-1"><label for="demo-radio-1">Radio 1</label>
+                      <input type="radio" name="demo-radio" id="demo-radio-2"><label for="demo-radio-2">Radio 2</label>                 
+                     <input type="radio" name="demo-radio" id="demo-radio-3"><label for="demo-radio-3">Radio 3</label>
+                  </div>
+                  <div class="field-group">
+                     <input type="checkbox" name="demo-checkbox" id="demo-checkbox-1"><label for="demo-checkbox-1">Checkbox 1</label>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+      </div>  <!-- end row -->
+      <div class="row">
+         <div class="medium-4 columns">
+            <form action="#">
+               <fieldset>
+                  <legend>Sign-in form</legend>
+                  <div class="field-group">
+                     <label for="sign-in-username">Username: <span class="required">*</span></label>
+                     <input type="text" id="sign-in-username" name="sign-in-username">
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <label for="sign-in-pwd">Password: <span class="required">*</span></label>
+                     <input type="password" id="sign-in-pwd" name="sign-in-pwd">
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <input type="checkbox" id="sign-in-checkbox" name="sign-in-checkbox">
+                     <label for="sign-in-checkbox">Remember me</label>
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <input type="submit" class="btn" value="Sign in">
+                  </div> <!-- end field group -->
+
+                  <p><em><span class="required">*</span> required fields</em></p>
+               </fieldset>
+            </form>
+         </div>
+         <div class="medium-4 columns">
+            <form action="#">
+               <fieldset>
+                  <legend>Sign-up form</legend>
+                  <div class="field-group">
+                     <label for="sign-up-email">Email address: <span class="required">*</span></label>
+                     <input type="email" id="sign-up-email" name="sign-up-email">
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <label for="sign-up-name">Username: <span class="required">*</span></label>
+                     <input type="text" id="sign-up-name" name="sign-up-name">
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <label for="sign-up-pwd">Password: <span class="required">*</span></label>
+                     <input type="password" id="sign-up-pwd" name="sign-up-pwd">
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <label for="sign-up-confirm-pwd">Confirm Password: <span class="required">*</span></label>
+                     <input type="password" id="sign-up-confirm-pwd" name="sign-up-confirm-pwd">
+                  </div> <!-- end field group -->
+
+
+                  <div class="field-group">
+                     <input type="submit" class="btn" value="Sign up">
+                  </div> <!-- end field group -->
+
+                  <p><em><span class="required">*</span> required fields</em></p>
+               </fieldset>
+            </form>
+         </div>
+         <div class="medium-4 columns">
+            <form action="#">
+               <fieldset>
+                  <legend>Consulenza online</legend>
+                  <div class="field-group">
+                     <label for="contact-name">Nome: <span class="required">*</span></label>
+                     <input type="text" id="contact-name" name="contact-name">
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <label for="contact-email">Email: <span class="required">*</span></label>
+                     <input type="email" id="contact-email" name="contact-email">
+                  </div> <!-- end field group -->
+
+
+                  <div class="field-group">
+                     <label for="contact-textarea" >Richiesta: <span class="required">*</span></label>
+                     <textarea name="contact-textarea" id="contact-textarea" cols="30" rows="10" class="field-fw"></textarea>
+                  </div> <!-- end field group -->
+
+                  <div class="field-group">
+                     <input type="submit" class="btn" value="Invia">
+                  </div> <!-- end field group -->
+
+               </fieldset>
+            </form>
+         </div>
+      </div> <!-- end row -->
+   </section>   <!-- end forms -->
+   <section id="icons" class="container">
+      <h1>Icons</h1>
+      <hr>
+      <div class="row">
+         <div class="small-half columns">
+            <h4>Icons list</h4>
+            <ul class="icon-list-default">
+               <li>
+                  <a href="#" target="_blank" title="follow us on pinterest"><i class="fa fa-pinterest-p"></i></a>
+               </li>
+               <li>
+                   <a href="#" target="_blank" title="follow us on facebook"><i class="fa fa-facebook-official"></i></a>
+               </li>
+               <li>
+                   <a href="#" target="_blank" title="follow us on twitter"><i class="fa fa-twitter-square"></i></a>
+               </li>
+               <li>
+                   <a href="#" target="_blank" title="follow us on youtube"><i class="fa fa-youtube-play"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on foursquare"><i class="fa fa-foursquare"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on last fm"><i class="fa fa-lastfm-square"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on vimeo"><i class="fa fa-vimeo-square"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on flickr"><i class="fa fa-flickr"></i></a>
+               </li>
+            </ul>
+         </div>
+         <div class="small-half columns">
+            <h4>Large icons list</h4>
+            <ul class="icon-list-large">
+               <li>
+                  <a href="#" target="_blank" title="follow us on pinterest"><i class="fa fa-pinterest-p"></i></a>
+               </li>
+               <li>
+                   <a href="#" target="_blank" title="follow us on facebook"><i class="fa fa-facebook-official"></i></a>
+               </li>
+               <li>
+                   <a href="#" target="_blank" title="follow us on twitter"><i class="fa fa-twitter-square"></i></a>
+               </li>
+               <li>
+                   <a href="#" target="_blank" title="follow us on youtube"><i class="fa fa-youtube-play"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on foursquare"><i class="fa fa-foursquare"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on last fm"><i class="fa fa-lastfm-square"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on vimeo"><i class="fa fa-vimeo-square"></i></a>
+               </li>
+               <li>
+                  <a href="#" target="_blank" title="follow us on flickr"><i class="fa fa-flickr"></i></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </section>  <!-- end icons -->
+
+
+   <section id="feed" class="container">
+   <h1>Feedback</h1>
+   <hr>
+   <div class="row">
+      <div class="medium-half columns">
+         <div class="alert-information">
+            <p><strong>Information</strong></p>
+            <p>This is the body of the message</p>
+         </div>
+      </div>
+      <div class="medium-half columns">
+         <div class="alert-error">
+            <p><strong>Error</strong></p>
+            <p>This is the body of the message</p>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="medium-half columns">
+         <div class="alert-warning">
+            <p><strong>Warning</strong></p>
+            <p>This is the body of the message</p>
+         </div>
+      </div>
+      <div class="medium-half columns">
+         <div class="alert-success">
+            <p><strong>Success</strong></p>
+            <p>This is the body of the message</p>
+         </div>
+      </div>
+   </div>
+      
+   </section>
+
+ <section id="tables" class="container">
+   <h1>Tables</h1>
+   <hr>
+      <div class="row">
+         <div class="small-6 columns">
+            <h4>Minimal</h4>
+
+            <!-- Table markup-->
+
+            <table class="minimal table">
+               <thead>
+                  <tr>
+                   <th>Head 1</th>
+                   <th>Head 2</th> 
+                   <th>Head 3</th>
+                   </tr>
+               </thead>
+              
+
+              <tr>
+                   <td>1</td>
+                   <td>2</td> 
+                   <td>3</td>
+              </tr>
+              <tr>
+                   <td>4</td>
+                   <td>5</td> 
+                   <td>6</td>
+              </tr>
+            </table>
+         </div> <!-- end col 6 -->
+
+         <div class="small-6 columns">
+            <h4>Bordered</h4>
+
+            <!-- Table markup-->
+
+            <table class="bordered table">
+               <thead>
+                  <tr>
+                   <th>Head 1</th>
+                   <th>Head 2</th> 
+                   <th>Head 3</th>
+                   </tr>
+               </thead>
+              <tr>
+                   <td>1</td>
+                   <td>2</td> 
+                   <td>3</td>
+              </tr>
+              <tr>
+                   <td>4</td>
+                   <td>5</td> 
+                   <td>6</td>
+              </tr>
+            </table>
+         </div> <!-- end col 6 -->
+      </div>
+   </section> <!-- end tables -->
+
+   <section id="navigation" >
+      <div class="container">
+      <h1>Navigation</h1>
+      <hr>
+      </div>
+
+      <div class="container">
+         <div class="row navbar-container topnav">
+            <div class="medium-4 columns head">
+               <button class="btn-large" id="rwd-trigger">
+                  <i class="fa fa-bars"></i>
+               </button>
+               <h1><a href="#" class="logo">Kairo</a></h1>
+            </div>
+            <div class="medium-8 columns">
+                  <nav role="navigation">
+                     <ul class="sf-menu">
+                        <li><a href="#">Basic</a>
+                           <ul>
+                              <li><a href="#grid">The Grid System</a></li>
+                              <li><a href="#typo">Typography</a></li>
+                              <li><a href="#btns">Buttons</a></li>
+                              <li><a href="#forms">Forms</a></li>
+                              <li><a href="#icons">Icons</a></li>
+                              <li><a href="#feed">Feedback</a></li>            
+                           </ul>
+                              
+                        </li>
+                        <li><a href="#">Navigation</a>
+                              <ul>
+                              <li><a href="#navigation">Navigation</a></li>
+                              <li><a href="#vertical">Other menus</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#">Showcase</a>
+                              <ul>
+                              <li><a href="#tabs">Tabs</a></li>
+                              
+                              </ul>
+                        </li>
+                     </ul>
+                  </nav>
+            </div>
+         </div>
+         
+         
+      </div>
+
+   </section>
+
+   <section class="container" id="vertical">
+      <h1>Other Menus</h1>
+      <hr>
+      <div class="row">
+         <div class="medium-3 columns navbar-container-vertical">
+            <h4>Extended Sub menus</h4>
+            <button class="btn" id="rwd-trigger-vert">
+                  <i class="fa fa-plus"></i>
+               </button>
+            <nav role="navigation">
+                     <ul class="sf-menu sf-vertical">
+                        <li class="drop"><a href="#">Basic</a>
+                           <ul>
+                              <li><h4><a href="#grid">The Grid System</a></h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptatibus accusantium ipsum, quaerat obcaecati quisquam placeat, cumque a eaque numquam.</p></li>
+                              <li><h4><a href="#typo">Typography</a></h4>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptatibus accusantium ipsum, quaerat obcaecati quisquam placeat, cumque a eaque numquam.</p></li>
+                              <li><h4><a href="#btns">Buttons</a></h4>
+                                 <ol class="subs">
+                                    <li><a href="">Lorem</a></li>
+                                    <li><a href="">Ipsum</a></li>
+                                    <li><a href="">sic</a></li>
+                                    <li><a href="">certamen</a></li>
+                                    <li><a href="">populus</a></li>
+                                 </ol>
+                              </li>
+                              <li><h4><a href="#forms">Forms</a></h4><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptatibus accusantium ipsum, quaerat obcaecati quisquam placeat, cumque a eaque numquam.</p></li>
+                              <li><h4><a href="#icons">Icons</a></h4>
+                              </li>
+                              <li><h4><a href="#feed">Feedback</a></h4></li>   
+                           </ul>
+                        </li>       
+                           
+                              
+                        
+                        <li class="drop"><a href="#">Navigation</a>
+                              <ul>
+                              <li><a href="#navigation">Navigation</a></li>
+                              <li><a href="#vertical">Other menus</a></li>
+                              </ul>
+                        </li>
+                        <li class="drop"><a href="#">#2</a>
+                           <ul>
+                              <li><a href="#grid">The Grid System</a></li>
+                              <li><a href="#typo">Typography</a></li>
+                              <li><a href="#btns">Buttons</a></li>
+                              <li><a href="#forms">Forms</a></li>
+                              <li><a href="#icons">Icons</a></li>
+                              <li><a href="#feed">Feedback</a></li>   
+                           </ul>
+                        </li>    
+                        <li class="drop"><a href="#">#3</a>
+                           <ul>
+                              <li><a href="#grid">The Grid System</a></li>
+                              <li><a href="#typo">Typography</a></li>
+                              <li><a href="#btns">Buttons</a></li>
+                              <li><a href="#forms">Forms</a></li>
+                              <li><a href="#icons">Icons</a></li>
+                              <li><a href="#feed">Feedback</a></li>   
+                           </ul>
+                        </li>    
+                     </ul>
+                </nav>
+         </div>
+         <div class="medium-5 columns">
+         <h4>horizontal simple nav</h4>
+         <nav role="navigation">
+            <ul class="horizontal">
+               <li><a href="">Lorem</a></li>
+               <li><a href="">Ipsum</a></li>
+               <li><a href="">sic</a></li>
+               <li><a href="">certamen</a></li>
+               <li><a href="">populus</a></li>
+            </ul>
+         </nav>
+         </div>
+         <div class="medium-4 columns">
+         <h4>Pagination</h4>
+            <ul class="pagination">
+               <li><a href="">1</a></li>
+               <li><a href="">2</a></li>
+               <li><a href="">3</a></li>
+               <li><a href="">4</a></li>
+               <li><a href="">5</a></li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <section id="tabs" class="container">
+   <h1>Tabs</h1>
+   <hr>
+      <div class="row">
+         <div class="medium-6 columns">
+            <div class="tabs">
+
+               <ul class="tabs-links">
+               <li class="active"><a href="#tab-1">First</a></li>
+               <li><a href="#tab-2">Second</a></li>
+               <li><a href="#tab-3">Third</a></li>
+            </ul>
+            <div class="tabs-content">
+               <div class="tab active" id="tab-1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eveniet eligendi mollitia minus! Dolores neque, in, excepturi voluptate error perspiciatis vero ab natus repellendus nesciunt, doloribus et officiis incidunt unde.</p>
+               </div>
+               <div class="tab" id="tab-2">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ipsa, accusantium iusto nesciunt vitae voluptas quidem. Deserunt optio sunt praesentium alias unde illo iste eos atque hic ducimus?</p>
+               </div>
+               <div class="tab" id="tab-3">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eius, repellat necessitatibus quas dicta rerum voluptates. Nisi quibusdam mollitia itaque, ad illo nihil minima provident fugit rerum recusandae?</p>
+               </div>
+            </div>  <!-- end tabs content -->
+         </div>  <!-- end .tabs -->
+         </div>
+         <div class="medium-6 columns">
+            <div class="tabs vertical">
+
+               <ul class="tabs-links">
+               <li class="active"><a href="#tab-4">First</a></li>
+               <li><a href="#tab-5">Second</a></li>
+               <li><a href="#tab-6">Third</a></li>
+            </ul>
+            <div class="tabs-content">
+               <div class="tab active" id="tab-4">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eveniet eligendi mollitia minus! Dolores neque, in, excepturi voluptate error perspiciatis vero ab natus repellendus nesciunt, doloribus et officiis incidunt unde.</p>
+               </div>
+               <div class="tab" id="tab-5">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum ipsa, accusantium iusto nesciunt vitae voluptas quidem. Deserunt optio sunt praesentium alias unde illo iste eos atque hic ducimus?</p>
+               </div>
+               <div class="tab" id="tab-6">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eius, repellat necessitatibus quas dicta rerum voluptates. Nisi quibusdam mollitia itaque, ad illo nihil minima provident fugit rerum recusandae?</p>
+               </div>
+            </div>  <!-- end tabs content -->
+         </div>  <!-- end .tabs -->
+         </div>
+      </div>
+   </section> <!-- end tabs  -->
+
+   <section id="acc" class="container">
+      <h1>Accordion</h1>
+      <hr>
+      <div class="accordion">
+         <div class="accordion-element">
+            <a href="#accordion-element-1" class="accordion-element-title">First</a>
+            <div id="accordion-element-1" class="accordion-element-content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro asperiores laboriosam a quis magni nisi dignissimos aspernatur quas et reiciendis, quod odit sequi qui pariatur error. Expedita hic aut eligendi!</p>
+            </div> <!-- end accordion element content -->
+         </div> <!-- end accordion element -->
+
+         <div class="accordion-element">
+            <a href="#accordion-element-2" class="accordion-element-title">Second</a>
+            <div id="accordion-element-2" class="accordion-element-content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro asperiores laboriosam a quis magni nisi dignissimos aspernatur quas et reiciendis, quod odit sequi qui pariatur error. Expedita hic aut eligendi!</p>
+            </div> <!-- end accordion element content -->
+         </div> <!-- end accordion element -->
+
+         <div class="accordion-element">
+            <a href="#accordion-element-3" class="accordion-element-title">Third</a>
+            <div id="accordion-element-3" class="accordion-element-content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro asperiores laboriosam a quis magni nisi dignissimos aspernatur quas et reiciendis, quod odit sequi qui pariatur error. Expedita hic aut eligendi!</p>
+            </div> <!-- end accordion element content -->
+         </div> <!-- end accordion element -->
+
+      </div> <!-- end.accordion -->
+   </section>
+
+   <section id="carousel" class="container">
+      <h1>Carousel</h1>
+      <hr>
+      <div class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="3000" data-cycle-caption-template="Numero {{slideNum}} of {{slideCount}} - {{cycleTitle}}">
+         <div class="cycle-caption"></div>
+
+         <div class="cycle-prev"><i class="fa fa-chevron-left"></i></div>
+         <div class="cycle-next"><i class="fa fa-chevron-right"></i></div>
+
+         <img src="images/demo/img-1.jpg" alt="Slider image 1" data-cycle-title="First image">
+         <img src="images/demo/img-2.jpg" alt="Slider image 2" data-cycle-title="Second image">
+         <img src="images/demo/img-3.jpg" alt="Slider image 3" data-cycle-title="Third image">
+         <img src="images/demo/img-4.jpg" alt="Slider image 4" data-cycle-title="Fourth image">
+
+      </div>  <!-- end cycle slideshow -->
+   </section>
+
+   <section id="gallery" class="container">
+      <h1>Media galleries</h1>
+      <hr>
+      <div class="row">
+         <div class="small-6 columns">
+            <h4>Image gallery</h4>
+
+         <ul class="gallery grid-block-3 grid-block-md-2">
+
+            <li>
+            <figure>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto"><img src="images/demo/img-3.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+
+
+
+            </li>
+
+            <li>
+            <figure>
+               <a href="images/demo/img-1.jpg" rel="prettyPhoto"><img src="images/demo/img-1.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-1.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+            <li>
+            <figure>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto"><img src="images/demo/img-3.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+            <li>
+            <figure>
+               <a href="images/demo/img-1.jpg" rel="prettyPhoto"><img src="images/demo/img-1.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-1.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+            <li>
+            <figure>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto"><img src="images/demo/img-3.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+            <li>
+            <figure>
+               <a href="images/demo/img-2.jpg" rel="prettyPhoto"><img src="images/demo/img-2.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-2.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+
+
+            <li>
+            <figure>
+               <a href="images/demo/img-1.jpg" rel="prettyPhoto"><img src="images/demo/img-1.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-1.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+            <li>
+            <figure>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto"><img src="images/demo/img-3.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-3.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+
+
+
+
+            <li>
+            <figure>
+               <a href="images/demo/img-2.jpg" rel="prettyPhoto"><img src="images/demo/img-2.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Title</h3>
+              <p>
+               <a href="images/demo/img-2.jpg" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+            </li>
+
+
+
+         </ul>
+         </div> <!-- end col 6 -->
+
+         <div class="small-6 columns">
+            <h4>Video gallery</h4>
+
+         <ul class="gallery grid-block-2 video">
+
+            <li>
+               <figure>
+               <a href="https://www.youtube.com/watch?v=Yka2PlquubI" rel="prettyPhoto"><img src="images/demo/img-video-large.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Clinic - Second Line Live</h3>
+                  <p>
+
+               <a href="https://www.youtube.com/watch?v=Yka2PlquubI" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+
+
+
+            </li>
+
+            <li>
+               <figure>
+               <a href="https://www.youtube.com/watch?v=OI9ZAoZY-r0" rel="prettyPhoto"><img src="images/demo/img-video-0.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Royal Baths Live</h3>
+                  <p>
+
+               <a href="https://www.youtube.com/watch?v=OI9ZAoZY-r0" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+
+            </li>
+
+            <li>
+               <figure>
+               <a href="https://www.youtube.com/watch?v=N7hBdLZNpuc" rel="prettyPhoto"><img src="images/demo/img-video-1.jpg" alt="terza immagine"></a>
+
+               <figcaption>
+               <h3>Shivas Live</h3>
+                  <p>
+
+               <a href="https://www.youtube.com/watch?v=N7hBdLZNpuc" rel="prettyPhoto">
+               </a>
+              </p>
+            </figcaption>
+            </figure>
+
+            </li>
+
+
+
+
+         </ul>
+         </div> <!-- end col 6 -->
+
+      </div> <!-- end row -->
+   </section>
+
+   <section id="mason">
+   <div class="container">
+      <h1>Masonry</h1>
+      <hr>
+
+      <div class="row" >
+         <div id="container">
+            <div class="item">
+            <div class="content"><img src="images/demo/img-1.jpg" alt="">
+            <h3>Title</h3></div></div>
+            <div class="item w2">
+            <div class="content"><img src="images/demo/img-2.jpg" alt="">
+            <h3>Title</h3></div></div>
+            <div class="item">
+            <div class="content"><img src="images/demo/img-3.jpg" alt="">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, quos.</p></div></div>
+            <div class="item">
+            <div class="content"><img src="images/demo/img-4.jpg" alt="">
+            <h3>Title</h3></div></div>
+            <div class="item">
+            <div class="content"><img src="images/demo/img-video-0.jpg" alt="">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias tempora harum, eligendi excepturi natus ut, quas, omnis iusto et quod a at voluptas dolorem perspiciatis vero itaque fugiat. Illo, provident.</p></div></div>
+            <div class="item">
+            <div class="content"><img src="images/demo/img-video-1.jpg" alt="">
+            <h3>Title</h3></div></div>
+            <div class="item">
+            <div class="content"><img src="images/demo/logo.png" alt="">
+            <h3>Title</h3></div></div>
+
+         </div>
+
+      </div>  <!-- end row -->
+   </div>  <!-- end container  -->
+</section>  <!-- end masonry -->
+
+
+  
+  <footer class="sticky">
+     <div class="container">
+        <div class="row">
+           <h3>kairo framework</h3>
+        </div>
+     </div>
+  </footer>
+
+   <!-- RIBBON CONTENT -->
+   <div id="contactus">
+            <form action="#">
+               <fieldset>
+
+                  <legend>Contact Form</legend>
+                  <div class="small-4 columns">
+                     <div class="field-group">
+                        <label for="contact-name">Name: <span class="required">*</span></label>
+                        <input type="text" id="contact-name" name="contact-name">
+                     </div> <!-- end field group -->
+
+                     <div class="field-group">
+                        <label for="contact-email">Email address: <span class="required">*</span></label>
+                        <input type="email" id="contact-email" name="contact-email">
+                     </div> <!-- end field group -->
+
+                     <div class="field-group">
+                        <label for="contact-website">Website: <span class="required">*</span></label>
+                        <input type="url" id="contact-website" name="contact-website">
+                     </div> <!-- end field group -->
+                  </div>
+                  <div class="small-8 columns">
+                     <div class="field-group">
+                        <label for="contact-textarea" >Message: <span class="required">*</span></label>
+                        <textarea name="contact-textarea" id="contact-textarea" cols="30" rows="10" class="field-fw"></textarea>
+                     </div> <!-- end field group -->
+                     
+                     <div class="field-group">
+                        <input type="submit" class="btn" value="Send Message">
+                     </div> <!-- end field group -->
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+
+  <script src="bower_components/jquery/jquery.min.js"></script>
+  <script src="bower_components/superfish/dist/js/superfish.min.js"></script>
+  <script src="bower_components/superfish/dist/js/hoverIntent.js"></script>
+  <script src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
+   <script src="bower_components/jquery-prettyPhoto/js/jquery.prettyPhoto.js"></script>
+
+  <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

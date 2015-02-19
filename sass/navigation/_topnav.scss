@@ -1,0 +1,62 @@
+@import "../settings/settings";
+
+.topnav {
+   background-color: $topnav-bg;
+
+}
+
+.navbar-container {
+   a {
+         color: $topnav-link-color;
+      }
+   h1 {
+      margin: 0;  
+   }
+
+   .sf-menu {
+      float:right;
+
+   }
+
+   .btn, .btn-large {
+      background-color: transparent;
+      color: darken($topnav-link-color, 10%);
+
+      &:hover {
+         color: darken($topnav-link-color,20%);
+      }
+   }
+
+   #rwd-trigger, .rwd-menu, [id^="rwd-trigger"] {
+      display:none;
+   }
+
+
+
+   @media screen and (max-width: $topnav-bp) {
+      h1 {
+         width:70%;
+         float:left;
+      }
+
+      #rwd-trigger, [id^="rwd-trigger"] {
+           display: block;
+           width: 20%;
+           float: right;
+           padding: $baseline/3 0 0 0;
+           margin-right: 10%;
+           position: relative;
+           z-index: 999999999;
+      }
+
+      .sf-menu {
+         display:none;
+      }
+
+      
+   }
+
+
+
+}
+

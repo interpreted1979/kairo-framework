@@ -1,0 +1,57 @@
+@import "../settings/settings";
+
+button,
+.btn,
+a.btn {
+   border: 0;
+   border-radius: $btn-round;
+   background-color: $btn-default-bg;
+   color: $btn-default-text-color;
+   cursor: pointer;
+   text-decoration: none;
+   font-weight: $font-weight-bold;
+   display:inline-block;
+   padding: $baseline/2 $baseline;
+   line-height: 1;
+   font-size: inherit;
+   font-family: inherit;
+
+   &:hover {
+      background-color: darken($link-color,30%);
+      color: lighten($greys, 60%);
+   }
+
+   &:active {
+      background-color: darken($link-color, 20%);
+   }
+
+   &:focus {
+      outline:none;
+   }
+}
+
+.btn-primary {
+   @extend .btn;
+
+   background-color: $btn-primary-bg;
+   color: $btn-primary-text-color;
+}
+
+.btn-secondary {
+   @extend .btn;
+
+   background-color: $btn-secondary-bg;
+   color: $btn-secondary-text-color;
+}
+
+.btn-small {
+   @extend .btn;
+   font-size: $btn-small-font-size;
+}
+
+.btn-large {
+   @extend .btn;
+   font-size: $btn-large-font-size;
+   padding: $baseline/3 $baseline;
+
+}

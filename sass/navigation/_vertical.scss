@@ -1,0 +1,156 @@
+@import "../settings/settings";
+.navbar-container-vertical {
+    
+    li {
+      background-color: $vm-bg;
+
+      &:hover,
+      &:active,
+      &.sfHover {
+          background-color: darken($vm-submenu-bg, 5%)!important;
+        }
+
+      ul li {
+        background-color: $vm-submenu-bg;
+        white-space: normal;
+
+        &:hover {
+          background-color: lighten($vm-submenu-bg, 1%)!important;
+        }
+
+        h4 {
+          font-size: $h5-size;
+          border-bottom: 1px dotted lighten($vm-submenu-bg, 30%);
+
+          &:hover {
+             background-color: lighten($vm-submenu-bg, 10%);
+          }
+        }
+
+        ol.subs {
+          margin: $baseline/2 $baseline/3;
+          li {
+            width: 100%;
+            margin:0;
+            padding:0;
+            border-bottom: 1px dotted lighten($vm-submenu-bg, 20%);
+
+            a {
+              font-size: .8em;
+              line-height: 1.1em;
+              text-transform: uppercase;
+              letter-spacing: 0.0625rem;
+            }
+          }
+        }
+        p {
+          padding:$baseline;
+          font-size: .8em;
+          color: darken($vm-link-color, 3%);
+        }
+
+        a {
+            color: darken($vm-link-color, 3%)!important;
+
+            &:hover {
+              color: lighten($vm-link-color, 10%)!important;
+            }
+          }
+      }
+    }
+
+    a {
+      color: $vm-link-color;
+      text-transform: uppercase;
+    }
+    .btn, .btn-large {
+        background-color: $vm-bg;
+        color: lighten($vm-link-color, 40%);
+
+        &:hover {
+           color: lighten($vm-link-color,80%);
+           background-color: lighten($vm-bg,5%);
+        }
+     }
+
+     #rwd-trigger-vert {
+        display: none;
+     }
+
+     .rwd-menu {
+      display:none;
+      background-color: $vm-bg;
+      overflow: hidden;
+      position:absolute;
+      top:4em;
+      left:5em;
+      z-index:99999;
+
+     }
+
+     @media screen and (max-width: $vm-bp) {
+        #rwd-trigger-vert {
+          display:block;
+        }
+        .sf-menu {
+          display: none;
+        }
+
+        .rwd-menu {
+          width: 80%;
+
+          a {
+            font-size: $h6-size;
+          }
+
+          li {
+            &:hover {
+              background-color:transparent !important;
+            }
+
+            ul {
+              margin: $baseline/2 0 ;
+            }
+          }
+        }
+      }
+
+
+   li.drop {
+      
+    ul {
+      
+      background-color: $vm-submenu-bg;
+
+      @media screen and (min-width: $xs-bp) {
+        width: 220%;
+          li {
+          width: 50%;
+          float:left;
+        }
+      }
+
+      @media screen and (min-width: $small-bp) {
+        width: 280%;
+      }
+
+      @media screen and (min-width: $medium-bp) {
+        width: 380%;
+
+        li {
+          width: 33%;
+          
+        }
+      }
+      @media screen and (min-width: $large-bp) {
+        width: 440%;
+      }
+
+      
+    }
+   }
+
+}
+
+
+

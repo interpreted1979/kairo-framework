@@ -1,0 +1,45 @@
+@import "../settings/settings";
+.icon-list-default {
+   overflow: hidden;
+   list-style-type:none;
+   margin:0;
+   padding: $baseline/3;
+   text-align: center;
+
+   @media screen and (min-width: $xs-bp) {
+      text-align: left;
+   }
+
+   li {
+
+      display: inline-block;
+      background-color: $icon-list-bg;
+      margin-bottom: $baseline/4;
+      transition: all .4s;
+
+      &:hover {
+         background-color: darken($icon-list-bg, 3%);
+      }
+      a {
+         font-size: $h4-size;
+         width:1em;
+         display: block;
+         color: $icon-color;
+         padding: $baseline/4 $baseline/2;
+         transition: all .2s;
+         &:hover {
+            color: darken($icon-color, 30%);
+         }
+      }
+   }
+}
+
+.icon-list-large {
+   @extend .icon-list-default;
+
+   li {
+      a {
+         font-size: $h2-size;
+      }
+   }
+}

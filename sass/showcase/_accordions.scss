@@ -1,0 +1,32 @@
+@import "../settings/settings";
+
+.accordion {
+	border: 1px solid $accordion-border-color;
+}
+
+.accordion-element-title {
+	border-bottom: 1px solid $accordion-border-color;
+	display: block;
+	padding: $baseline;
+	background-color: lighten($accordion-inactive-bg-color, 15%);
+	color: lighten($accordion-active-text-color, 30%);
+
+	&:hover,
+	&.active {
+		color: $accordion-active-text-color !important;
+		background-color: $accordion-active-bg-color;
+	}
+
+	.accordion-element:last-child & {
+		border-bottom: 0;
+	}
+}
+
+.accordion-element-content {
+	display: none;
+	padding: $baseline;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
