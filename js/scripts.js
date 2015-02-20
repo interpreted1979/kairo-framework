@@ -5,7 +5,7 @@ $( function() {
    var mainMenuVert = $('#vertical .sf-vertical');
    // clone the menu
    mainMenuTop.clone().removeClass().addClass('rwd-menu').prependTo('.navbar-container nav');
-   mainMenuTop.clone().removeClass().addClass('rwd-menu').prependTo('.navbar-container-vertical nav');
+   mainMenuVert.clone().removeClass().addClass('rwd-menu').prependTo('.navbar-container-vertical nav');
    // initialize superfish menu
    mainMenu.superfish();
    mainMenuTop.superfish();
