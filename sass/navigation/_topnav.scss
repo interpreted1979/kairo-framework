@@ -3,6 +3,11 @@
 .topnav {
    background-color: $topnav-bg;
 
+    
+   .columns {
+    padding: 0 $gutter;
+   }
+
 }
 
 .navbar-container {
